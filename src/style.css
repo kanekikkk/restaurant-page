@@ -1,0 +1,273 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* multiple used class */
+
+#content{
+
+    width: 100vw;
+    height: 100vh;
+    display: relative;
+
+}
+#content::before{
+
+  content: ' ';
+  background-image: url('./images/image1.jpg');
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+
+}
+.container{
+
+  padding: 3% 8%;
+  display: relative;
+
+}
+.flex{
+
+  display: flex;
+
+}
+.text-Inside-Image{
+
+  text-shadow: 0px 0px 6px black;
+
+}
+.logo{
+
+  width: 20px;
+  height: 20px;
+
+}
+.absolute{
+
+  position:relative;
+  top: 27vh;
+  left: 50%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+
+}
+
+/* basic use */
+
+body{
+
+  font-family: Roboto, serif;
+
+}
+li{
+
+  cursor:pointer;
+
+}
+
+li:hover{
+
+  color: rgba(255, 255, 255, .8);
+
+}
+li:active{
+
+  color: rgba(255, 255, 255, .1);
+
+}
+footer{
+  bottom: 0em;
+  position: fixed;
+  top: 50%;
+  left: 2%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: rgba(255, 255, 255, .9);
+  padding-block: 2em .5em;
+
+}
+
+/* classes and id */
+
+nav{
+
+  position: fixed;
+  width: 85%;
+  z-index: 2;
+
+}
+nav ul{
+
+  font-size: 1.3em;
+  gap: 3em;
+  justify-content: right;
+  color: white;
+
+}
+nav ul li{
+
+  padding: .5em;
+  transition: .2s ease-in-out;
+
+}
+
+nav ul li:hover{
+
+  outline: 2px solid white;
+
+}
+
+#homePageDiv{
+
+  font-family: 'Libre Baskerville';
+
+}
+
+.resturent-name{
+
+  color: white;
+  font-size: 3.8em;
+  font-weight: 400;
+  word-spacing: .5em;
+  text-align: center;
+
+}
+
+.resturent-slogan{
+
+  font-size: 2.3em;
+  color: white;
+  font-weight: 600;
+  text-align: center;
+  word-spacing: .07em;
+  margin-top: .8em;
+  font-family: 'Dancing Script';
+
+}
+.logos li{
+
+  margin-top: 1.5em;
+  padding: .4em .5em .2em .5em;
+  border-radius: 100%;
+  background-color: white;
+  transition: .4s ease-in-out;
+
+}
+.logos li:hover{
+
+  background-color: rgba(255, 255, 255, .8);
+  outline: 2px solid white;
+  outline-offset: 5px;
+
+}
+.logos li:active{
+
+  background-color: rgba(255, 255, 255, .1);
+
+}
+#menuH1{
+
+  color: white;
+  font-size: 3em;
+
+}
+#menuP{
+
+  color: white;
+  font-size: 1.4em;
+
+}
+#menuPageDiv{
+
+  color: white;
+  text-align: center;
+  padding-bottom: 10em;
+
+}
+#menuPageDiv h1{
+
+  font-size: 3em;
+  font-weight: 400;
+  padding-top: 2em;
+
+}
+#menuPageDiv h4{
+
+  margin-top: .6em;
+
+}
