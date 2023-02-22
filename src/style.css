@@ -132,7 +132,13 @@ select {
 body{
 
   font-family: Roboto, serif;
+  overflow: scroll;
 
+}
+body::-webkit-scrollbar { 
+
+  display: none;
+  
 }
 li{
 
@@ -257,6 +263,7 @@ nav ul li:hover{
   color: white;
   text-align: center;
   padding-bottom: 10em;
+  width: auto;
 
 }
 #menuPageDiv h1{
